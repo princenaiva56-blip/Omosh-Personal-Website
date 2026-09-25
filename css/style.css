@@ -327,3 +327,149 @@ button{
 
     background: var(--color-gold);
 }
+
+/*About Section*/
+
+.section-padding {
+    padding: 120px 6%;
+}
+
+.about {
+    background: var(--color-light);
+}
+
+.about-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+/* IMAGE */
+
+.about-image-wrapper {
+    position: relative;
+    height: 600px;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 2px;
+}
+
+.about-image-caption {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+
+    padding: 20px 25px;
+
+    background: var(--color-dark);
+    color: var(--color-white);
+
+    border-left: 3px solid var(--color-gold);
+}
+
+.about-image-caption span {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about-image-caption p {
+    margin-top: 5px;
+
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* CONTENT */
+
+.about-content {
+    max-width: 520px;
+}
+
+.section-label {
+    margin-bottom: 22px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    color: var(--color-green);
+}
+
+.about-content h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.3rem, 4vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--color-dark);
+
+    margin-bottom: 30px;
+}
+
+.about-content h2 span {
+    color: var(--color-green);
+}
+
+.about-intro {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.8;
+
+    color: var(--color-text);
+
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 0.95rem;
+    line-height: 1.9;
+
+    color: var(--color-text-light);
+
+    margin-bottom: 35px;
+}
+
+/* TEXT LINK */
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    color: var(--color-dark);
+
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-gold);
+
+    transition: color var(--transition);
+}
+
+.text-link span {
+    font-size: 1.2rem;
+    transition: transform var(--transition);
+}
+
+.text-link:hover {
+    color: var(--color-green);
+}
+
+.text-link:hover span {
+    transform: translateX(5px);
+}
