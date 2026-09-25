@@ -102,3 +102,134 @@
     }
 
 }
+
+/*  LEADERSHIP RESPONSIVENESS*/
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .leadership-header {
+        margin-bottom: 70px;
+    }
+
+    .leadership-item {
+        grid-template-columns: 90px 35px 1fr;
+    }
+
+    .leadership-card {
+        padding-left: 35px;
+        padding-bottom: 60px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .leadership-header {
+        margin-bottom: 55px;
+    }
+
+    .leadership-header h2 {
+        font-size: clamp(2.3rem, 9vw, 3.2rem);
+    }
+
+    .leadership-intro {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+
+    /* TIMELINE */
+
+    .leadership-item {
+        grid-template-columns: 65px 25px 1fr;
+        min-height: 0;
+    }
+
+
+    /* YEAR */
+
+    .leadership-year {
+        padding-top: 3px;
+
+        font-size: 1.15rem;
+    }
+
+
+    /* TIMELINE LINE */
+
+    .leadership-line span {
+        width: 10px;
+        height: 10px;
+
+        margin-top: 6px;
+    }
+
+
+    /* CARD */
+
+    .leadership-card {
+        padding-left: 25px;
+        padding-bottom: 50px;
+    }
+
+    .leadership-role {
+        font-size: 0.65rem;
+        letter-spacing: 2px;
+    }
+
+    .leadership-card h3 {
+        font-size: 1.45rem;
+        line-height: 1.3;
+    }
+
+    .leadership-card p:not(.leadership-role) {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+
+
+    /* HOVER */
+
+    .leadership-item:hover .leadership-card {
+        transform: translateX(4px);
+    }
+
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+
+    .leadership-header {
+        margin-bottom: 45px;
+    }
+
+    .leadership-item {
+        grid-template-columns: 50px 20px 1fr;
+    }
+
+    .leadership-year {
+        font-size: 1rem;
+    }
+
+    .leadership-card {
+        padding-left: 20px;
+        padding-bottom: 45px;
+    }
+
+    .leadership-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .leadership-card p:not(.leadership-role) {
+        font-size: 0.88rem;
+    }
+
+}
