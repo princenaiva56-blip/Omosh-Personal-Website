@@ -328,7 +328,7 @@ button{
 /*About Section*/
 
 .section-padding {
-    padding: 120px 6%;
+    padding: 100px 6%;
 }
 
 .about {
@@ -349,7 +349,7 @@ button{
 
 .about-image-wrapper {
     position: relative;
-    height: 600px;
+    height: 500px;
 }
 
 .about-image {
@@ -471,12 +471,11 @@ button{
     transform: translateX(5px);
 }
 
-/* =========================
-   LEADERSHIP SECTION
-========================= */
+/* LEADERSHIP SECTION */
 
 .leadership {
     background: var(--color-white);
+    padding: 90px 6%;
 }
 
 .leadership-container {
@@ -489,7 +488,7 @@ button{
 
 .leadership-header {
     max-width: 700px;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 }
 
 .leadership-header h2 {
@@ -875,3 +874,188 @@ button{
     color: var(--color-dark);
 }
 
+/* CONTACT */
+
+.contact {
+    background: var(--color-white);
+}
+
+.contact-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.contact-header {
+    max-width: 700px;
+    margin-bottom: 55px;
+}
+
+.contact-header h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 600;
+    line-height: 1.15;
+    color: var(--color-dark);
+    margin-bottom: 25px;
+}
+
+.contact-header h2 span {
+    color: var(--color-green);
+}
+
+.contact-intro {
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--color-text-light);
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 35px;
+    background: var(--color-light);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: transform var(--transition),
+                border-color var(--transition);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-gold);
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-dark);
+    color: var(--color-gold);
+    font-size: 1.5rem;
+}
+
+.contact-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-gold);
+    margin-bottom: 10px;
+}
+
+.contact-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--color-dark);
+    margin-bottom: 8px;
+}
+
+.contact-card div p:last-child {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--color-text-light);
+}
+
+.contact-arrow {
+    margin-left: auto;
+    font-size: 1.5rem;
+    color: var(--color-green);
+    transition: transform var(--transition);
+}
+
+.contact-card:hover .contact-arrow {
+    transform: translateX(5px);
+}
+
+/* FOOTER */
+
+.site-footer {
+    background: var(--color-dark);
+    color: var(--color-white);
+    padding: 75px 6% 25px;
+}
+
+.footer-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer-logo span {
+    color: var(--color-gold);
+}
+
+.footer-brand p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-heading {
+    margin-bottom: 25px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-gold);
+}
+
+.footer-navigation,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-navigation a,
+.footer-contact a {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color var(--transition);
+}
+
+.footer-navigation a:hover,
+.footer-contact a:hover {
+    color: var(--color-gold);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-bottom p,
+.footer-bottom a {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom a:hover {
+    color: var(--color-gold);
+}

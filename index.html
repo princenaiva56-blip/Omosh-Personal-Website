@@ -32,7 +32,7 @@
             OM<span>O</span>SH
         </a>
 
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home" class="nav-link active">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#leadership" class="nav-link">Leadership</a></li>
@@ -42,7 +42,8 @@
 
         <button class="menu-toggle"
                 aria-label="Open navigation menu"
-                aria-expanded="false">
+                aria-expanded="false"
+                aria-controls="nav-links" >
             <span></span>
             <span></span>
             <span></span>
@@ -538,17 +539,113 @@
 
 </section>
 
-        <!--Contact-->
+<section id="contact" class="contact section-padding">
+    <div class="contact-container">
 
-        <section id="contact" class="contact">
+        <div class="contact-header">
+            <p class="section-label">GET IN TOUCH</p>
 
-        </section>
+            <h2>Let's start a <span>conversation.</span></h2>
+
+            <p class="contact-intro">
+                For inquiries, conversations, or matters relating to
+                Omosh's public engagements, feel free to get in touch.
+            </p>
+        </div>
+
+        <div class="contact-options">
+
+            <!-- WhatsApp -->
+            <a
+                href="https://wa.me/254755320789"
+                class="contact-card"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <div class="contact-icon">↗</div>
+
+                <div>
+                    <p class="contact-label">WHATSAPP</p>
+                    <h3>Send a message</h3>
+                    <p>Connect directly on WhatsApp.</p>
+                </div>
+
+                <span class="contact-arrow">→</span>
+            </a>
+
+            <!-- Email -->
+            <a
+                href="mailto:phenihasantony19@gmail.com"
+                class="contact-card"
+            >
+                <div class="contact-icon">@</div>
+
+                <div>
+                    <p class="contact-label">EMAIL</p>
+                    <h3>Send an email</h3>
+                    <p>Reach out through email.</p>
+                </div>
+
+                <span class="contact-arrow">→</span>
+            </a>
+
+        </div>
+    </div>
+</section>
 
         <!--Footer-->
 
-        <footer class="site-footer">
+  <footer class="site-footer">
+    <div class="footer-container">
 
-        </footer>
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    OM<span>O</span>SH
+                </a>
+
+                <p>
+                    Leadership, service, and community.
+                </p>
+            </div>
+
+            <div class="footer-navigation">
+                <p class="footer-heading">QUICK LINKS</p>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#leadership">Leadership</a>
+                <a href="#media">Media</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-contact">
+                <p class="footer-heading">GET IN TOUCH</p>
+
+                <a href="https://wa.me/2547XXXXXXXX"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    WhatsApp
+                </a>
+
+                <a href="mailto:omosh@example.com">
+                    Email
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2026 Omosh. All rights reserved.
+            </p>
+
+            <a href="#home">Back to top ↑</a>
+        </div>
+
+    </div>
+</footer>
 
         <script src="js/main.js"></script>
     </main>
