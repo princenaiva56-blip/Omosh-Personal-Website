@@ -88,3 +88,43 @@ navItems.forEach(link => {
     });
 
 });
+
+// ACTIVE NAVIGATION INDICATOR
+
+const sections = document.querySelectorAll(
+    "section[id]"
+);
+
+function updateActiveLink() {
+
+    let currentSection = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop - 200) {
+            currentSection = section.getAttribute("id");
+        }
+
+    });
+
+    navItems.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (
+            link.getAttribute("href") ===
+            `#${currentSection}`
+        ) {
+            link.classList.add("active");
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", updateActiveLink);
+
+updateActiveLink();
