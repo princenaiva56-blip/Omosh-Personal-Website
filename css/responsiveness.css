@@ -491,3 +491,15 @@
     }
 }
 
+@media (max-width: 768px) {
+    .featured-video {
+        height: auto;
+        max-height: none;
+    }
+
+    .featured-video video {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
