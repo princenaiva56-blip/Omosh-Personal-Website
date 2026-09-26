@@ -332,8 +332,11 @@ button{
 }
 
 .about {
+    position: relative;
     background: var(--color-light);
 }
+
+
 
 .about-container {
     max-width: var(--container-width);
@@ -350,6 +353,7 @@ button{
 .about-image-wrapper {
     position: relative;
     height: 500px;
+    overflow: hidden;
 }
 
 .about-image {
